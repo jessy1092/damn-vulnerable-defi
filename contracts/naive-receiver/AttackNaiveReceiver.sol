@@ -20,7 +20,6 @@ contract AttackNaiveReceiver {
         owner = msg.sender;
     }
 
-    // Function called by the pool during flash loan
     function attack(address borrower) public payable {
         require(msg.sender == owner, "Sender must be owner");
 
